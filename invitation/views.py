@@ -24,6 +24,7 @@ def save_to_google_sheets(invitation):
             invitation.full_name,
             invitation.company,
             invitation.email,
+            invitation.phone_number,
             invitation.code,
             str(invitation.created_at),
         ]

@@ -23,6 +23,7 @@ class Invitation(models.Model):
     code = models.CharField(
         max_length=15, default="WGC-0"
     )  # Assuming the code is a CharField
+    phone_number = models.CharField(max_length=12, blank=False, null=False)
 
     @classmethod
     def increment_code(cls):
