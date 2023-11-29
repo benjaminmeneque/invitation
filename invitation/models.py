@@ -12,6 +12,7 @@ class Invitation(models.Model):
         ("UpTC", "Uptitude Training Corp."),
         ("WGCCC", "WeSupport Group of Company Credit Cooperative"),
         ("TSTC", "Tranzend Solutions and Trading Corp."),
+        ("other guest", "Other Guest"),
     ]
 
     full_name = models.CharField(max_length=100, blank=False, null=False)

@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,16 @@
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body class="pt-5">
     <div class="container">
         <h1 class="text-center mt-5">Welcome WGC Attendees!</h1>
         {% if code %}
         <div class="text-center mt-5">
             <p class="h3"><strong class="h2">{{ code }}</strong></p>
-            <p class="text-muted">Please show/screenshot it to get your food stub.</p>
+            <p class="text-muted">Nagpapasalamat kami sa iyong pagdalo at pagiging bahagi ng okasyong ito. Upang makuha
+                ang iyong food stub, mangyaring kumuha ng screenshot ng ticket number na ito at ipakita ito sa entrance
+                booth. Maligayang pasko at masaganang bagong taon!</p>
         </div>
         {% endif %}
     </div>
@@ -24,4 +28,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
